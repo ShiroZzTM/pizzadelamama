@@ -16,36 +16,3 @@ a {
   /* width: 100%; */
   margin: auto;
 }
-
-/* Conteneur occupant toute la fenêtre */
-#container {
-}
-/* L'image est animée grâce aux keyframes */
-#fiat {
-  position: absolute;
-  width: 100px; /* Ajustez la taille si besoin */
-  animation: bounce 5s linear infinite;
-}
-/* Animation en 4 étapes pour simuler un rebond sur les côtés */
-@keyframes bounce {
-  0% {
-    left: 0;
-    top: 0;
-  }
-  25% {
-    left: calc(100vw - 100px);
-    top: 0;
-  }
-  50% {
-    left: calc(100vw - 100px);
-    top: calc(100vh - 100px);
-  }
-  75% {
-    left: 0;
-    top: calc(100vh - 100px);
-  }
-  100% {
-    left: 0;
-    top: 0;
-  }
-}
